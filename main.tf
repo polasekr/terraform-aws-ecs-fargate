@@ -114,7 +114,7 @@ resource "aws_lb_target_group" "task" {
       timeout             = lookup(health_check.value, "timeout", null)
       healthy_threshold   = lookup(health_check.value, "healthy_threshold", null)
       unhealthy_threshold = lookup(health_check.value, "unhealthy_threshold", null)
-      matcher             = lookup(health_check.value, "matcher", null)
+#      matcher             = lookup(health_check.value, "matcher", null)
     }
   }
 
